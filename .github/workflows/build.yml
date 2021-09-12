@@ -8,6 +8,6 @@ jobs:
       - name: build
         run: |
           echo 1
-          ls "${{ github.workspace }}"
-          bash "${{ github.workspace }}/build.sh" "${{ github.workspace }}"
+          cd "${{ github.workspace }}"
+          bash "${{ github.repository }}/build.sh"
           echo 2
