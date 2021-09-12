@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: build
+        uses: actions/checkout@v2
         run: |
           echo 1
           cd "${{ github.workspace }}"
