@@ -1,0 +1,12 @@
+name: build
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build
+        run: |
+          echo 1
+          "${{ github.workspace }}/build.sh" "${{ github.workspace }}"
+          echo 2
