@@ -9,5 +9,6 @@ jobs:
         run: |
           echo 1
           cd "${{ github.workspace }}"
-          bash "${{ github.repository }}/build.sh"
+          ls -alF
+          bash "${{ github.workspace }}/build.sh"
           echo 2
